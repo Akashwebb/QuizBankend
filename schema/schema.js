@@ -14,7 +14,7 @@ const Quiz=new Schema({
     eight:String,
     nine:String,
     ten:String,
-    count:Number
+    
     
 
     

@@ -47,7 +47,7 @@ app.get("data", async (req,res)=>{
 
 
 app.post("/post",async (req,res)=>{
-     const {author,one,two,three,four,five,six,seven,eight,nine,ten,count}=req.body
+     const {author,one,two,three,four,five,six,seven,eight,nine,ten}=req.body
            console.log(author,one)
               try{
                   const value=await schma.create({
