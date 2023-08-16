@@ -15,8 +15,16 @@ app.use(bodyParser.json())
 
 // const uri = ;
 // mongoose.set('strictQuery', true);
-mongoose.connect(`mongodb+srv://akashkumarsingh2727:akash@cluster0.7vnmqhl.mongodb.net/?retryWrites=true&w=majority`)
-
+//mongoose.connect(`mongodb+srv://akashkumarsingh2727:akash@cluster0.7vnmqhl.mongodb.net/?retryWrites=true&w=majority`)
+const db="mongodb+srv://admin:admin@cluster0.064h0s0.mongodb.net/?retryWrites=true&w=majority"
+mongoose.set('strictQuery',true)
+mongoose.connect(db,(err)=>{
+    if(err){
+        console.log(err)
+    }else{
+        console.log("connected to database")
+    }
+})
 
 
 const schma=require("./schema/schema")
